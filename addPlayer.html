@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    <link rel="stylesheet" href="./assets/css/addTeam.css">
+
+    <!-- Title -->
+    <title>Landkit</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+</head>
+<body>
+
+  <section class="pt-4 pt-md-11">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                <h1 class="display-3 text-center text-md-start">
+                    Add <span class="text-primary">Player</span>. 
+                </h1>
+                
+            </div>
+            <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+                <div class="container">
+                    <div class="title">Player</div>
+                    <form id="formPlayer" action="#" >
+                        <div class="user-details">
+                            <div class="input-box">
+                                <span class="details">Full Name</span>
+                                <input type="text" id="fullName" placeholder="Team Full Name" required>
+                            </div>
+                            
+                            <div class="input-box">
+                                <span class="details">From Team</span>
+                                <input type="text" id="shortName" placeholder="Enter the Initials" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Description</span>
+                                <input type="text" id="description" placeholder="Any details" required>
+                            </div>
+                            <div class="input-box">
+                                <span class="details">Price</span>
+                                <input type="text" id="price" placeholder="Season Price" required>
+                            </div>
+
+                            <div class="input-box">
+                                <span class="details">Player Image</span>
+                                <input type="text" id="picture" placeholder="Player Image Link" required>
+                            </div>
+
+                            <div class="playing-details">
+                              <input type="radio" value="yes" name="retired" id="dot-1">
+                              <input type="radio" value="no" name="retired" checked id="dot-2">
+                              <span class="playing-title">Retired</span>
+                              <div class="category">
+                                <label for="dot-1">
+                                  <span class="dot one"></span>
+                                  <span class="playing">Yes</span>
+                                </label>
+                                <label for="dot-2">
+                                  <span class="dot two"></span>
+                                  <span class="playing">no</span>
+                                </label>
+                              </div>
+                            </div>
+
+                            <div class="button">
+                                <input id="submit" type="submit" value="Submit">
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- / .row -->
+    </div>
+    <!-- / .container -->
+</section>
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <footer class="py-8 py-md-11 bg-gray-200">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+
+                    <!-- Brand -->
+                    <a href="./index.html"><img  src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2"></a>
+                    
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-2">
+                        A better way for Knowledge.
+                    </p>
+
+                    <!-- Social -->
+                    
+
+                </div>
+
+                
+            </div>
+            <!-- / .row -->
+        </div>
+        <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/addPlayer.js"></script>
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+</body>
+</html>
